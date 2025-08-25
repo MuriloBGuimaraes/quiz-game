@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("./3179875.jpg");
+}
+
+.container {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Paleta de cores do ColorHunt */
+#start-btn, #next-btn, #restart-btn {
+  background: #570A57;
+  color: #fff;
+}
+
+#start-btn:hover, #next-btn:hover, #restart-btn:hover {
+  background: #A91079;
+}
+
+#home-btn {
+  background: #2E0249;
+  color: #fff;
+}
+
+#home-btn:hover {
+  background: #F806CC;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.answers button {
+  background: #eee;
+  color: #333;
+  font-weight: bold;
+}
+
+.answers button.correct {
+  background: lightgreen !important;
+}
+
+.answers button.wrong {
+  background: salmon !important;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#player-name {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 80%;
+}
+
+#ranking-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#ranking-list li {
+  background: #f2f2f2;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}

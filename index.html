@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Tela inicial -->
+    <div id="start-screen" class="screen active">
+      <h1>QUIZ GAME</h1>
+      <p>Escolha uma categoria para começar:</p>
+      <select id="category-select">
+        <option value="9">Conhecimentos Gerais</option>
+        <option value="21">Esportes</option>
+        <option value="23">História</option>
+        <option value="17">Ciência & Natureza</option>
+        <option value="18">Computadores</option>
+        <option value="22">Geografia</option>
+      </select>
+      <input type="text" id="player-name" placeholder="Digite seu nome" />
+      <button id="start-btn">Começar Quiz</button>
+      <button id="ranking-btn">Ranking 📊</button>
+    </div>
+
+    <!-- Tela do Quiz -->
+    <div id="quiz-screen" class="screen">
+      <h2 id="question">Carregando pergunta...</h2>
+      <div id="answers" class="answers"></div>
+      <div class="controls">
+        <button id="home-btn">Início 🏠</button>
+        <button id="next-btn" disabled>Próxima Pergunta</button>
+      </div>
+    </div>
+
+    <!-- Tela de Resultado -->
+    <div id="result-screen" class="screen">
+      <h2>Fim do Quiz!</h2>
+      <p>Sua pontuação: <span id="score"></span></p>
+      <button id="restart-btn">Jogar Novamente</button>
+      <button id="save-btn">Salvar no Ranking 💾</button>
+    </div>
+
+    <!-- Tela de Ranking -->
+    <div id="ranking-screen" class="screen">
+      <h2>Ranking 🏆</h2>
+      <ul id="ranking-list"></ul>
+      <button id="back-home-btn">Voltar</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
