@@ -32,9 +32,10 @@ Paleta de cores utilizada:
 
 
 ## 📸 Preview
-📍 [Quiz Screenshot]()
+📍 [Quiz Screenshot](https://prnt.sc/ay5dXRmWQyuZ)
 
 
 
 ## ▶️ Como executar o projeto
-👉 [Acesse o jogo online]()
+👉 [Acesse o jogo online](https://quiz-game-nine-eta.vercel.app/)
+
